@@ -1,0 +1,69 @@
+from Constants import *
+class Object:
+    lastId = 0
+    def __init__(self, id)
+    self.__id = self.lastId
+    self.__lastId += 1
+
+    def set_id(self, id_code):
+        self.__id = id_code
+
+    def get_id(self):
+        return self.__id
+
+    def select_object(self):
+        name_object = str(input(NAME_OBJECT_INPUT).strip().title())
+        return name_object
+
+    def client_object_selected(self, object_name):
+        if object_name == "Cliente":
+            client = Client()
+            client.create_client()
+        else:
+            self.automotive_object_selected(object_name)
+
+    def automotive_object_selected(self, object_name):
+        if object_name == "Automotor":
+            automotive =
+            automotive
+        else:
+            self.supplier_object_selected()
+
+    def supplier_object_selected(self):
+        supplier =
+        supplier
+
+    def create_object(self):
+
+    def remove_object(self):
+
+    def print_object(self):
+
+class Client(Object):
+    def __init__(self, set_id, get_id)
+    self.__name = ""
+    self.__lastName = ""
+    self.__automotive = None
+    super().__init__(set_id, get_id)
+
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, name):
+        self.__name = name
+
+    def get_lastname(self):
+        return self.__lastName
+
+    def set_lastname(self, lastname):
+        self.__lastName = lastname
+
+    def get_automotive(self):
+        return self.__automotive
+
+    def set_automotive(self, automotive):
+        self.__automotive = automotive
+
+    def create_client(self):
+        name = str(input(NAME_INPUT).strip().title())
+        last_name = str(input(LAST_NAME_INPUT).strip().title())

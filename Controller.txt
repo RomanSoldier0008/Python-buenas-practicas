@@ -1,0 +1,20 @@
+class Controller:
+    client_list = []
+    automotive_list = []
+    supplier_list = []
+
+    def add_client(self, client):
+        client_list.append(client)
+
+    def delete_client(self, index):
+        client_list.pop(index)
+
+    def index_client(self, client):
+        index = client_list.index(client)
+        return index
+
+    def choose_client(self):
+        name_client = str(input(NAME_INPUT).strip().title())
+        for i in range(len(client_list)):
+            if client_list[i].get_name() == name_client:
+                self.index_client(client_list[i])

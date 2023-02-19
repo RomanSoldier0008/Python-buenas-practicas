@@ -1,0 +1,22 @@
+# CLASE MENU
+
+MAIN_MENU_INPUT = """
+--------------------------------------------
+       Menú
+1) Crear cliente, automotores o proveedores
+2) Salir
+--------------------------------------------
+Ingrese opción: """
+MAIN_MENU_INCORRECT_OPTION = "Error: Ingresaste un valor inválido"
+
+# CLASE OBJETO
+
+NAME_OBJECT_INPUT = """
+--------------------------
+Cliente
+Automotor
+Proveedor
+--------------------------
+"""
+NAME_INPUT = "Ingrese nombre del cliente: "
+LAST_NAME_INPUT = "Ingrese apellido del cliente: "
